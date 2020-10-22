@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 
+  what we want is 10px, so divide default px (16px) to 10 
+  10/16 = 0.625 
+  .625*16 = 10
+  we are converting this to percent because each user may have different font size as a default
+  so that we want to provide the right font size according to user's default value (px)
+  */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.logo-and-about {
+  display: flex;
+}
+
+/* .logo-and-about:last-child {
+  margin-left: auto;
+} */
+
+.rectangle-logo {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.header-about-me {
+  margin-left: auto;
+}
