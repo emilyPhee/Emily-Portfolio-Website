@@ -32,9 +32,9 @@ font-family: 'Roboto Mono', monospace; */
 
 
 html {
-  /* 
-  what we want is 10px, so divide default px (16px) to 10 
-  10/16 = 0.625 
+  /*
+  what we want is 10px, so divide default px (16px) to 10
+  10/16 = 0.625
   .625*16 = 10
   we are converting this to percent because each user may have different font size as a default
   so that we want to provide the right font size according to user's default value (px)
@@ -44,6 +44,12 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+.header-logo {
+  width: 18rem;
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
 }
 
 .logo-and-about {
@@ -57,8 +63,23 @@ body {
 
 .header-about-me {
   margin-left: auto;
+  font-family: 'Roboto Mono', monospace;
+  color: #5F5F5F;
+  font-size: 1.5rem;
+  padding: 2rem;
+
+  /* margin-left: 1rem; */
+}
+.header-about-me:hover {
+  cursor: pointer;
 }
 
+/* .zot-logo {
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 1px;
+} */
 
 /* Main banner (welcome greeting) */
 #banner-intro {
@@ -72,7 +93,7 @@ body {
   overflow: hidden;
 
   /* animation */
-  animation: typing-animation 4s steps(29, end) 1s 1 normal both, 
+  animation: typing-animation 4s steps(29, end) 1s 1 normal both,
   typing-cursor 1s steps(29, end) infinite;
 
   font-family: 'Roboto Mono', monospace;
@@ -89,7 +110,7 @@ body {
 
   font-size: 3rem;
   padding-bottom: 3rem;
-  
+
   font-family: 'Roboto Mono', monospace;
   /* place banner in the middle */
   position: relative;
@@ -123,9 +144,27 @@ body {
 .project-button:active {
   border: none;
 }
+.project-list {
 
-.footer {
-  margin-top: 30rem;
+  margin-top: 14%;
+  display: flex;
+  justify-content: space-between;
 }
+.temp-project {
+  background-color: antiquewhite;
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
+
+}
+.footer {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  margin-top: 30rem;
+  /* position: absolute; */
+
+  /* transform: translateX(-50%);
+  bottom: 0; */
 
 
+}
